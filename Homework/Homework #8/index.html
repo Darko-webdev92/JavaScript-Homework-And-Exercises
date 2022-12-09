@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+        .container{ 
+            margin: 50px auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>HOMEWORK PART 1 </h2>
+    <label for="name"></label>
+    <input type="text" name="name" id="name" placeholder="name">
+    <button id="submit">Submit</button>
+    <div id="result"></div>
+    </div>
+
+    <div class="container">
+        <h2>HOMEWORK PART 2 </h2>
+        <input type="text" name="text" id="text" placeholder="Enter text">
+        <input type="color" name="color" id="color" placeholder="color">
+        <button id="generateH1">Generate H1</button>    
+        <div class="result">
+            <!-- <h1> <span class="span"></span></h1> -->
+        </div>
+        
+       
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+           window.jQuery || document.write('<script src="./lib/jquery-3.6.0.js"><\/script>');
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

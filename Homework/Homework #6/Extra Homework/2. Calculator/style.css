@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 30vw;
+    height: 70vh;
+    /* border: solid #B4B3B5; */
+    margin: 5% auto;
+    padding: inherit;
+}
+
+#display{
+width: 100%;
+height: 20%;
+display: flex;
+justify-content:flex-end;
+align-items: center;
+background-color: #211F22;
+font-size: 2.5rem;
+font-weight: bold;
+color: white;
+padding-right: 5%;
+}
+
+#display-2{
+    padding-left: 5px;
+}
+
+.calculator{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+.calc{
+    width: 25%;
+    
+}
+
+.button{
+   height: 11.1vh;
+   background-color: #fff;
+   border: 1px solid #B4B3B5;
+   width: 25%;
+   font-weight: bold;
+   font-size: 2.3rem;
+   cursor: pointer;
+
+}
+#clear{
+    width: 75%; 
+}
+.operation, .decimal, .equal{
+    background-color: #A0001C;
+    color: #fff;
+    font-weight: bold;
+}
+#devide, #minus{
+    font-family: "Courier New";
+    font-size: 4.3rem;
+
+}
+.zero{
+    width: 50%;
+}

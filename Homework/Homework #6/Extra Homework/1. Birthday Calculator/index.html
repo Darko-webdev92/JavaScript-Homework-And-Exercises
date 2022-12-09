@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/index.html" method="post">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+        <button id="submit">Submit</button>
+    </form>
+</body>
+<script>
+    let submit = document.getElementById('submit');
+    let paragraph = document.createElement('p')
+    submit.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        let date = new Date();
+        let  birthday = new Date(document.getElementById('birthday').value);
+        let age = date.getFullYear() - birthday.getFullYear();
+
+
+        if ((date.getMonth() === birthday.getMonth()) && (date.getDate() === birthday.getDate())){
+            if(age < 18){
+                paragraph.textContent = `Happy Birthday, you are not adult`;
+            }else{
+                paragraph.textContent = `Happy Birthday, you are an adult`;
+            }
+        }else{
+            if(age < 18){
+                paragraph.textContent = `You are not adult`;
+            }else{
+                paragraph.textContent = `You are an adult`;
+            }
+        }    
+        document.body.appendChild(paragraph);
+        document.getElementById('birthday').value = ''
+    });
+</script>
+
+</html>
